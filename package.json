@@ -2,6 +2,7 @@
   "name": "ajs",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
@@ -38,7 +39,7 @@
     "core-js": "^3.22.8"
   },
   "repository": {
-    "type": "git",
+    "type": "git", 
     "url": "git+https://github.com/Julie-T/oop_2.git"
   },
   "bugs": {

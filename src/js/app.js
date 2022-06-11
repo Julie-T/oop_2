@@ -91,3 +91,8 @@ export class Zombie extends Character {
     this.defence = defence || 10;
   }
 }
+
+
+const bowerman = new Bowerman('Breadly', 'Bman', 10, 1, 25, 25);
+bowerman.levelUp();
+console.log(bowerman);

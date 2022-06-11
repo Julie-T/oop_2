@@ -34,6 +34,12 @@ test('Создание объекта со свойствами', () => {
   });
 });
 
+test('Повышение уровня при нулевом здоровье', () => {
+  const bowerman = new Bowerman('Breadly', 'Bowerman', 0);
+
+  expect(bowerman.levelUp()).toThrowError(new Error('Нельзя повысить уровень'));
+});
+
 test('Создание объекта со свойствами', () => {
   const swordsman = new Swordsman('Chris');
   expect(swordsman).toEqual({
@@ -92,4 +98,9 @@ test('Создание объекта со свойствами', () => {
     attack: 40,
     defence: 10,
   });
+});
+
+test('Проверка корректности имени', () => {
+  const bowerman = new Bowerman('K');
+  expect(bowerman).toTHrowError(new Error('Данные некорректны'));
 });
